@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>SignUp</title>
+   <title>book session</title>
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
@@ -14,84 +16,67 @@
 
 </head>
 <body>
-   
-
-
-<div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
-   <h1>Register into Blitz</h1>
-</div>
+<?php
+      
+if (isset($_POST['status'])) {
+    $email = $_POST['email'];
+    echo $email;
+}
+   ?>
 
 
 <section class="booking">
 
-<h3 class="heading-title">Enter Your Details</h3>
+   <h1 class="heading-title">Update Status</h1>
 
-<form action="signup_form.php" method="post" class="book-form">
+   <form action="post_status.php" method="post" class="book-form">
 
-    <div class="flex">
-        <div class="inputBox">
-            <span>Name :</span>
-            <input type="text" placeholder="enter your name" name="name" required>
-        </div>
-        <div class="inputBox">
+      <div class="flex">
+      <div class="inputbox">
             <span>Email :</span>
-            <input type="email" placeholder="enter your email" name="email" required>
+            <p><h1><?=$email?></h1></p>
+         </div> 
+         <div class="inputBox">
+            <span>Email :</span>
+            <input type="email" name="email" value="<?=$email?>">
         </div>
-        <div class="inputBox">
-            <span>Password :</span>
-            <input type="password" placeholder="enter your password" name="password" required>
-        </div>
-        <div class="inputBox">
-            <span>Phone No :</span>
-            <input type="number" min="0000000000" max="9999999999" placeholder="enter your number" name="phone" required>
-        </div>
-        <div class="inputBox">
-            <span>Address :</span>
-            <input type="text" placeholder="enter your address" name="address"required>
-        </div>
-        <div class="inputBox">
-            <span>Security Question :</span>
-            <select name = "securityquestion" class = "box drp_btn">
-               <option value = "color">What is your favourite color?</option>
-               <option value = "father">What is your father's name?</option>
-               <option value = "petspecies">Which animal is your pet?</option>
-               <option value = "petname">What is the name of your pet?</option>
-               <option value = "number">What is your favourite number?</option>
-               <option value = "cricketer">Who's your favourite cricketer?</option>
+        
+         <div class="inputBox">
+            <span>Status:</span>
+            <select name = "statusType" class = "box drp_btn">
+               <option value = " Order Recieved" selected>Order Recieved</option>
+               <!-- <option value = "Accepted">Accepted</option> -->
+               <option value = "In Progess">In Progress</option>
+               <option value = "Completed">Completed</option>
 
             </select>
          </div>
-         <div class="inputBox">
-            <span>Answer of Security Question :</span>
-            <input type="text" placeholder="enter your appropriate answer of security question" name="securityanswer" required>
-        </div>
-    </div>
-    <center>
-    <input type="submit" value="submit" class="btn" name="send">
+         
+         
+         
+         <style>
+               .drp_btn{
+                  min-width:100%;
+                  padding: 1.2rem 1.4rem;
+                  font-size: 1.6rem;
+                  color: var(--light-black);
+                  text-transform: none;
+                  margin-top: 1.5rem;
+                  border:1px solid black;
+               }
+            </style>
+      </div>
+      <center>
+      <input type="submit" value="submit" class="btn" name="send_status">
 </center>
-</form>
+   </form>
 
 </section>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <section class="footer">
+<section class="footer">
 
    <div class="box-container">
 
@@ -101,6 +86,7 @@
          <a href="about.php"> <i class="fas fa-angle-right"></i> About</a>
          <a href="package.php"> <i class="fas fa-angle-right"></i> Package</a>
          <a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>
+         <a href="logout.php"><i class="fas fa-angle-right"></i>Log Out</a>
       </div>
 
       <div class="box">
@@ -113,7 +99,6 @@
 
       <div class="box">
          <h3>Contact Us</h3>
-         <a href="contact.php"> <i class="fas fa-phone"></i> Satya Narayan Mohapatra </a>
          <a href="contact.php"> <i class="fas fa-phone"></i> Chiranjib Parida </a>
          <a> <i class="fas fa-envelope"></i> wanderlush@gmail.com </a>
          <a> <i class="fas fa-map"></i> Bhubaneswar,Odisha,India</a>
@@ -133,8 +118,12 @@
 
 </section>
 
- footer section ends -->
-
+<script>
+         document.getElementById("name").value = "<?php echo $nameFromDB ?>";
+         document.getElementById("email").value = "<?php echo $emailFromDB ?>";
+         document.getElementById("phone").value = "<?php echo $phoneFromDB ?>";
+         document.getElementById("address").value = "<?php echo $addressFromDB ?>";
+</script>
 
 
 
@@ -145,7 +134,7 @@
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-<script src="js/script.js"></script> -->
+<script src="js/script.js"></script>
 
 </body>
 </html>

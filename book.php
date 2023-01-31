@@ -83,9 +83,10 @@ if ($result->num_rows > 0) {
          <div class="inputBox">
             <span>Pick-up/Drop Date :</span>
             <?php
-
+               //  $orgDate = date();  
+               //  $newDate = date("Y-m-d", strtotime($orgDate));  
             ?>
-            <input type="date" placeholder="please enter your pick-up/drop date" min="<?PHP echo date("Y-m-d"); ?>" max="<?PHP echo date('Y-m-d', strtotime(date("Y-m-d"). ' +  6 months')); ?>" name="date" required>
+            <input type="date" placeholder="please enter your pick-up/drop date" min="<?PHP echo date("Y-m-d"); ?>" max="<?PHP echo date("Y-m-d", strtotime(date("Y-m-d"). ' +  50 days')); ?>" name="date" required>
          </div>
          <div class="inputBox">
             <span>Top Wear(tshirt,top,shirt) :</span>
@@ -119,22 +120,43 @@ if ($result->num_rows > 0) {
             <span>Name :</span>
             <input id="name" type="text" placeholder="enter your name" name="name" required>
          </div>
-         <div class="inputbox">
+         <div class="inputBox">
             <span>Email :</span>
             <input id="email" type="email"  placeholder="enter your email" name="email" required>
          </div> 
+         <div class="dropdown">
+            <!-- <span>Country Code:</span> -->
+            <select name = "countrycode" class = "box drp_btn">
+               <option value = "+91">+91</option>
+               <option value = "+93">+93</option>
+               <option value = "+92">+92</option>
+               <option value = "+2">+25</option>
+               <option value = "+75">+75</option>
+               <option value = "+001">+001</option>
+
+            </select>
+         </div>
+
          <div class="inputBox">
             <span>Phone Number :</span>
-            <input id= "phone" type="number" min="0000000000" max="9999999999" placeholder="enter your number" name="phone" required>
+            <input id= "phoneno" type="tel" min="0000000000" max="9999999999" placeholder="enter your number" name="phone" required>
          </div>
+
+
          <div class="inputBox">
             <span>Address :</span>
             <input id="address" type="text" placeholder="enter your pick-up/drop address" name="address" required>
          </div>  
          <div class="inputBox">
+            <span >Pin Code :</span>
+            <input  id= "phone" type="tel" min="000000" max="999999" placeholder="enter your area code" name="pin" required>
+         </div>
+         <div class="inputBox">
             <span>Description(if any) :</span>
             <input id="description" type="text" placeholder="if any instructions please mention here" name="description" required >
-         </div> 
+         </div>
+
+          
          
          <style>
                .drp_btn{
@@ -146,6 +168,23 @@ if ($result->num_rows > 0) {
                   margin-top: 1.5rem;
                   border:1px solid black;
                }
+               #phoneno{
+                  position: relative;
+                  padding-left: 90px;
+               }
+               .dropdown{
+                  height: 70px;
+                  width: 30px;
+                  position: absolute;
+                  margin-top: 454px;
+                  /* margin-left: 760px; */
+                  z-index: 11111;
+
+               }
+               .box{
+                  width: 75px;
+               }
+               
             </style>
       </div>
       <center>
@@ -203,7 +242,7 @@ if ($result->num_rows > 0) {
 <script>
          document.getElementById("name").value = "<?php echo $nameFromDB ?>";
          document.getElementById("email").value = "<?php echo $emailFromDB ?>";
-         document.getElementById("phone").value = "<?php echo $phoneFromDB ?>";
+         document.getElementById("phoneno").value = "<?php echo $phoneFromDB ?>";
          document.getElementById("address").value = "<?php echo $addressFromDB ?>";
 </script>
 

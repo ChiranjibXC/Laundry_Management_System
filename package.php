@@ -51,9 +51,9 @@
          </div>
          <div class="content">
             <h3>Machine Cleaning</h3>
-            <p><b><h4>Top Wear Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;12rs(per piece)<br><br>
-               <b><h4>Bottom Wear Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;20rs(per piece)<br><br>
-               <b><h4>Woolen Cloth Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;75rs(per piece)<br><br>
+            <p><b><h4>Top Wear Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;5$(per piece)<br><br>
+               <b><h4>Bottom Wear Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;15$(per piece)<br><br>
+               <b><h4>Woolen Cloth Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;20$(per piece)<br><br>
                <b><h4>Other Price:</h4></b>Other Price depend upon Cloth Variety(other than above three category).
          </p>
          </div>
@@ -65,9 +65,9 @@
          </div>
          <div class="content">
             <h3>Dry Cleaning</h3>
-            <p><b><h4>Top Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;120rs(per piece)<br><br>
-               <b><h4>Bottom Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;200rs(per piece)<br><br>
-               <b><h4>Woolen Cloth Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;300rs(per piece)<br><br>
+            <p><b><h4>Top Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;15$rs(per piece)<br><br>
+               <b><h4>Bottom Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;25$(per piece)<br><br>
+               <b><h4>Woolen Cloth Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;40$(per piece)<br><br>
                <b><h4>Other Price:</h4></b>Other Price depend upon Cloth Variety(other than above three category).
          </p>
          </div>
@@ -79,9 +79,9 @@
          </div>
          <div class="content">
             <h3>Stain Removal</h3>
-            <p><b><h4>Top Wear Stain Removal Price:</h4></b>&nbsp;&nbsp;&nbsp;80rs(per piece)<br><br>
-               <b><h4>Bottom Wear Stain Removal Price:</h4></b>&nbsp;&nbsp;&nbsp;135rs(per piece)<br><br>
-               <b><h4>Woolen Cloth Stain Removal Price:</h4></b>&nbsp;&nbsp;&nbsp;200rs(per piece)<br><br>
+            <p><b><h4>Top Wear Stain Removal Price:</h4></b>&nbsp;&nbsp;&nbsp;2$(per piece)<br><br>
+               <b><h4>Bottom Wear Stain Removal Price:</h4></b>&nbsp;&nbsp;&nbsp;5$(per piece)<br><br>
+               <b><h4>Woolen Cloth Stain Removal Price:</h4></b>&nbsp;&nbsp;&nbsp;10$(per piece)<br><br>
                <b><h4>Other Price:</h4></b>Other Price depend upon Cloth Variety(other than above three category).
          </p>
          </div>
@@ -93,9 +93,9 @@
          </div>
          <div class="content">
             <h3>Ironing</h3>
-            <p><b><h4>Top Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;8rs(per piece)<br><br>
-               <b><h4>Bottom Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;14rs(per piece)<br><br>
-               <b><h4>Woolen Cloth Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;25rs(per piece)<br><br>
+            <p><b><h4>Top Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;1$(per piece)<br><br>
+               <b><h4>Bottom Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;3$(per piece)<br><br>
+               <b><h4>Woolen Cloth Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;5$(per piece)<br><br>
                <b><h4>Other Price:</h4></b>Other Price depend upon Cloth Variety(other than above three category).
          </p>
          </div>
@@ -107,9 +107,9 @@
          </div>
          <div class="content">
             <h3>Fabric Care</h3>
-            <p><b><h4>Top Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;75rs(per piece)<br><br>
-               <b><h4>Bottom Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;140rs(per piece)<br><br>
-               <b><h4>Woolen Cloth Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;400rs(per piece)<br><br>
+            <p><b><h4>Top Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;3$(per piece)<br><br>
+               <b><h4>Bottom Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;5$(per piece)<br><br>
+               <b><h4>Woolen Cloth Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;10$(per piece)<br><br>
                <b><h4>Other Price:</h4></b>Other Price depend upon Cloth Variety(other than above three category).
          </p>
          </div>
@@ -121,9 +121,9 @@
          </div>
          <div class="content">
             <h3>Bleaching</h3>
-            <p><b><h4>Top Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;30rs(per piece)<br><br>
-               <b><h4>Bottom Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;70rs(per piece)<br><br>
-               <b><h4>Woolen Cloth Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;160rs(per piece)<br><br>
+            <p><b><h4>Top Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;2$(per piece)<br><br>
+               <b><h4>Bottom Wear Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;5$(per piece)<br><br>
+               <b><h4>Woolen Cloth Dry Cleaning Price:</h4></b>&nbsp;&nbsp;&nbsp;10$(per piece)<br><br>
                <b><h4>Other Price:</h4></b>Other Price depend upon Cloth Variety(other than above three category).
          </p>
          </div>

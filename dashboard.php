@@ -12,6 +12,11 @@
 
    <link rel="stylesheet" href="css/style.css">
 
+   <!-- <style>
+      .box{
+         background-color:darkgray;
+      }
+   </style> -->
 </head>
 <body>
 
@@ -57,7 +62,7 @@
          </div> -->
     <div class="box">
         <h2  style="text-transform: none;"> <?php
-        echo'Laundry Requests:<br><br>';
+        echo'<h1>Laundry Requests:<br><br></h1>';
         $mysqli = new mysqli("localhost","root","","laundry_db");
 
         if ($mysqli -> connect_errno) {
@@ -71,8 +76,13 @@
         // Fetch all
         while($row = mysqli_fetch_assoc($result)){
             echo ('Date:'.'  '.$row["date"].'  '.'||'.' '.'TopWear:'.'  '.$row["topwear"].'  '.'||'.' '.'BottomWear:'.'  '.$row["bottomwear"].'  '.'||'.' '.'WoolenCloth:'.'  '.$row["woolen"].'  '.'||'.' '.'Others:'.'  '.$row["others"].'  '.'||'.' '.'ServiceType:'.'  '.$row["servicetype"].'  '.'||'.' '.'Name:'.'  '.$row["name"].'  '.'||'.' '.'Email:'.'  '.$row["email"].' '.'||'.' '.'Phone:'.' '.$row["phone"].' '.'||'.' '.'Address:'.' '.$row["address"].' '.'||'.' '.'Description:'.' '.$row["description"].'<br>');
-            echo'<input type="button" name="update" value="Update Status" onclick="status.php" /><br><br>';
-         }
+            ?>
+               <form action="admin-status.php" method="post">
+               <input type="submit" value="Update Status" class="submit" name="status">
+               <input style="display:none;" type="text" name="email" value="<?=$row["email"]?>">
+               </form>
+               <br>
+        <?php }
         $mysqli -> close();
 ?></h2>
 </div>

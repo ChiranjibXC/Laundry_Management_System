@@ -1,6 +1,44 @@
-<?PHP
+
+
+<?php
    session_start();
-?>
+   // print_r($_SESSION["user_id"]);
+   $emailFromDB =  $_SESSION["user_id"];
+   // echo $emailFromDB;
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "laundry_db";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM `signup_form` WHERE email='$emailFromDB'";
+
+$result = $conn->query($sql);
+
+
+if ($result->num_rows > 0) {
+  // output data of each row
+   while($row = $result->fetch_assoc()) {
+      // echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+      // $nameFromDB =  $row["name"];
+      $emailFromDB = $row["email"];
+      $statusFromDB = $row["status"];
+      $dateFromDB = $row["date"];
+      // $phoneFromDB = $row["phone"];
+      // $addressFromDB = $row["address"];
+      // echo "yessssss";
+   }
+} else {
+   echo "0 results";
+}
+
+   ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +53,20 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
    <link rel="stylesheet" href="css/style.css">
+   <style>
+      .home{
+         position: relative;
+      }
+      .status-container{
+         position: absolute;
+         width: 250px;
+         min-height: 100px;
+         background:darkgray;
+         right: 2%;
+         top: 2%;
+         z-index: 111111111;
+      }
+   </style>
 
 </head>
 <body>
@@ -40,6 +92,13 @@
 
 
 <section class="home">
+   <div class="status-container">
+      <p><h2><center>Order Status</center></h2></p>
+      <center>
+      <div><h3><I>Email: <?=$emailFromDB?><I></I></h3></div>
+      <div><h3>Status: <?=$statusFromDB?><br> On <br> <?=$dateFromDB?></h3></div>
+      </center>
+   </div>
 
    <div class="swiper home-slider">
 
